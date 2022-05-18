@@ -169,6 +169,9 @@ body {
     padding: 0px !important;
 }
 
+.demo-button-mobile {
+    display: inline-block;
+}
 
 #mobile-no {
     font-family: "Poppins", sans-serif;
@@ -190,7 +193,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 21px;
+    font-size: 17px;
     background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
     border-radius: 2px;
     padding: 16px;
@@ -232,7 +235,7 @@ body {
     text-decoration: none;
 }
 
-#btnzmob{
+#btnzmob {
     cursor: pointer;
     background-image: linear-gradient(90deg, #f92c8b 0%, #8d19ae);
     background-color: #e350b8;
@@ -246,17 +249,17 @@ body {
     text-decoration: none;
 }
 
-#btnzmob:hover{
+#btnzmob:hover {
     cursor: pointer;
     color: gray;
     text-decoration: none;
 }
 
-#mobile-no2{
+#mobile-no2 {
     text-decoration: none;
 }
 
-#mobile-no2:hover{
+#mobile-no2:hover {
     text-decoration: none;
 }
 
@@ -465,8 +468,27 @@ h6 {
     /* bottom: 80%; */
 }
 
+#error_name {
+    color: red;
+    position: relative;
+}
+
+#error_name1 {
+    color: red;
+    position: relative;
+}
+
+#error_name2 {
+    color: red;
+    position: relative;
+}
+
+#error_name3 {
+    color: red;
+    position: relative;
+}
+
 .boxes {
-    width: 185px !important;
     display: block;
     text-decoration: none;
     color: black;
@@ -510,13 +532,16 @@ h6 {
 
 @media (min-width: 576px) {
     .pack {
-        -webkit-box-flex: 0 !important;
-        -ms-flex: 0 0 30% !important;
-        flex: 0 0 30% !important;
-        max-width: 50% !important;
+        max-width: 40% !important;
+        min-width: 340px !important;
     }
 }
 
+@media (max-width: 990px) {
+    #form {
+        flex: 0 0 auto !important;
+    }
+}
 
 /* .pack {
     background-color: #ffffff;
@@ -872,16 +897,163 @@ a {
     }
 }
 
-@media (min-width: 768px){
-    #mobile-no2{
+@media (min-width: 766px) {
+    #mobile-no2 {
         display: none;
     }
 
-    #btnzmob{
+    #btnzmob {
         display: none;
     }
 }
+
+@media (max-width: 515px) {
+    .demo-button-mobile {
+        margin-left: 0px !important;
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 766px) {
+    .demo-button-mobile {
+        margin-left: 100px;
+        margin-bottom: 200px;
+    }
+}
+
+@media (min-width: 800px) {
+    .boxes {
+        max-width: 120px !important;
+    }
+}
+
+@media (min-width: 950px) {
+    .boxes {
+        max-width: 150px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .boxes {
+        max-width: unset !important;
+    }
+}
+
+
+
+@media (max-width: 479px) {
+    .boxes {
+        width: 110px !important;
+    }
+}
+
+@media (min-width: 480px) {
+    .boxes {
+        width: 120px !important;
+    }
+}
+
+@media (min-width: 440px) {
+    .boxes {
+        width: 130px !important;
+    }
+}
+
+@media (min-width: 520px) {
+    .boxes {
+        width: 150px !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .boxes {
+        width: 200px !important;
+    }
+
+
+}
+
+@media (max-width: 409px) {
+    #mobile-no2 {
+        font-size: 12px;
+    }
+
+    #btnzmob {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 739px) {
+    .create {
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width: 1205px) {
+    .create {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 871px) {
+    .create {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 820px) {
+    .create {
+        margin-left: 70px;
+    }
+}
+
 @media (max-width: 768px) {
+    .mobile-footer .container {
+        padding: 0px 15px !important;
+    }
+
+    .mobile-footer {
+        display: block !important;
+    }
+
+
+    footer {
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 765px) and (max-width: 810px) {
+    .services-item {
+        flex: 0 0 42% !important;
+    }
+}
+
+/* @media (min-width: 575px) and (max-width: 764px) {
+    .services-item{
+        flex: 0 0 auto;
+    }
+} */
+
+@media (max-width: 600px) {
+    .mobileh1 {
+        display: none;
+    }
+
+    .mobilepricing {
+        margin-top: 50px !important;
+    }
+
+    .about-content {
+        padding-top: 100px;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 765px) {
     .section .div-margin {
         margin-top: 15px;
         margin-bottom: 15px;
@@ -904,20 +1076,9 @@ a {
         display: none;
     }
 
-    .mobile-footer {
-        display: block !important;
-    }
 
     .w-app {
         display: none;
-    }
-
-    .mobile-footer .container {
-        padding: 0px 15px !important;
-    }
-
-    footer {
-        display: none !important;
     }
 
     #slider-content-line1 {
@@ -932,6 +1093,7 @@ a {
         text-align: center;
         padding-top: 170px;
         padding: 35px;
+        margin-top: 200px;
 
     }
 
@@ -939,10 +1101,9 @@ a {
         display: none !important;
     }
 
-    #mobile-no{
+    #mobile-no {
         display: none;
     }
-
 
     .sincere {
         display: none;
